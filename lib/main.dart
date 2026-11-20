@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'screens/movie_form_screen.dart';
 void main() {
   runApp(const filmotekaApp());
 }
@@ -13,13 +13,12 @@ class filmotekaApp extends StatelessWidget {
       title: 'Filmoteka',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(colorScheme:  ColorScheme.fromSeed(seedColor: Colors.deepPurple)),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Filmoteka'),
-        ),
-
-        ),
-      
+      home: const MovieFormScreen(),
     );
   }
 }
+
+      
+    
+  
+
